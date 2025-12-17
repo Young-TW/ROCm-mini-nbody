@@ -8,7 +8,9 @@ set(CMAKE_C_STANDARD 99)
 include_directories(./include)
 
 # Find HIP
-find_package(hip QUIET)
+# find_package(hip QUIET)
+set(HIP_COMPILER /opt/rocm/bin/hipcc)
+set(CMAKE_HIP_COMPILER /opt/rocm/bin/hipcc)
 
 # CPU version (original)
 # add_executable(nbody-cpu nbody.c)
