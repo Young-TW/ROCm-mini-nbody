@@ -23,16 +23,12 @@ set(CMAKE_HIP_COMPILER /opt/rocm/bin/hipcc)
 
 # HIP original version
 add_executable(nbody-hip-orig hip/nbody-orig.hip)
-target_link_libraries(nbody-hip-orig hip::device)
 
 # HIP SOA version
 add_executable(nbody-hip-soa hip/nbody-soa.hip)
-target_link_libraries(nbody-hip-soa hip::device)
 
 # HIP block version
 add_executable(nbody-hip-block hip/nbody-block.hip)
-target_link_libraries(nbody-hip-block hip::device)
 
 # HIP unroll version
 add_executable(nbody-hip-unroll hip/nbody-unroll.hip)
-target_link_libraries(nbody-hip-unroll hip::device)
