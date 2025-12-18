@@ -1,9 +1,11 @@
-cmake_minimum_required(VERSION 3.20.0)
+cmake_minimum_required(VERSION 3.21)
 project(ROCm-mini-nbody VERSION 0.0.0 LANGUAGES CXX C)
 add_definitions(-D__HIP_PLATFORM_AMD__)
 
 set(CMAKE_CXX_STANDARD 23)
 set(CMAKE_C_STANDARD 99)
+
+project(ROCm-mini-nbody VERSION 0.0.0 LANGUAGES CXX C HIP)
 
 # Include directories
 include_directories(./include)
